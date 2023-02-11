@@ -1,3 +1,11 @@
+function seni(){
+    location.href = './home.html';
+}
+
+window.onload = () =>{
+   setTimeout("seni()",5*1000);
+}
+
 // let nhk;
 // window.onload =function(){
 // axios
