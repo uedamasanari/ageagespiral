@@ -32,5 +32,3 @@
 //         // console.log(object);
 //     });
 // }
-const api = "'https://api.nhk.or.jp/v2/pg/genre/400/g1/0000/2023-02-17.json?key=npMMRYTXmAkwXKmQctzwDkPFFwsooICW'";
-
