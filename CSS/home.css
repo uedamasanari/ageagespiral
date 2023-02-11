@@ -3,57 +3,116 @@
     padding: 0;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     background-color: #0c0c0c;
 }
 
-.container{
+.container_1 {
     display: flex;
     width: 100%;
     height: 15vh;
 }
 
-.serch_div{
-    width:80%;
+.serch_div {
+    width: 80%;
     height: 10vh;
     position: relative;
 }
 
-.serch_div img{
+.serch_div img {
     position: absolute;
     top: 50%;
     left: 8%;
 }
 
-.serch_div > input[type=text]{
+.serch_div>input[type=text] {
     width: 70%;
     height: 10vh;
     margin: 4%;
-    border:solid 3px #0f0;
+    border: solid 3px #0f0;
     border-radius: 40px;
     background-color: #0c0c0c;
     color: white;
-    text-align:center;
+    text-align: center;
     font-size: 20px;
     font-weight: bold;
 }
 
-.serch_div > input[type=text]::placeholder{
+.serch_div>input[type=text]::placeholder {
     color: white;
     font-size: 20px;
 }
-.filter_div{
+
+.filter_div {
     margin: 4%;
     width: 20%;
     height: 10vh;
     /* background-color: #0f0; */
     position: relative;
 }
-.filter_div img{
-    position: absolute;
-    top:30%;
-    /* left: 30%; */
 
+.filter_div img {
+    position: absolute;
+    top: 30%;
+}
+
+.time_div{
+    margin: 4% 0;
+    width: 100%;
+    height:10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.time{
+    width: 50%;
+    height: 10vh;
+    border: solid 3px #0f0;
+    border-radius:20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.container_2 {
+    width: 100%;
+    height: 60vh;
+    background-color: #555;
+    overflow: scroll;
+}
+
+.block{
+    margin-top: 5%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.janru {
+    margin-top: 3%;
+    width: 20%;
+    height: 10vh;
+    background-color: aqua;
+    border-radius: 20px;
+    background-color:#0c0c0c;
+    border: solid 3px #0f0;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bangumi {
+    width: 70%;
+    height: 15vh;
+    border-radius: 20px;
+    background-color:#0c0c0c;
+    border: solid 3px #0f0;
+    color: white;
 }
