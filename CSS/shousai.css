@@ -1,0 +1,72 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #0c0c0c;
+}
+
+.bangumi_div{
+    width: 100%;
+    height: 60vh;
+    background-color: #0c0c0c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hyou{
+    border: solid 3px #0f0;
+    border-radius: 20px;
+    margin:5% 0;
+    width: 80%;
+    height: 55vh;
+    color: white;
+    background-color: #0c0c0c;
+    overflow: scroll;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.contaier_div{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+
+.karenda{
+    width:30%;
+    height:15vh;
+    border: solid 3px #0f0;
+    border-radius: 10px;
+    background-color:#0c0c0c;
+    color: white;
+    position: relative;
+}
+
+.add{
+    position: absolute;
+    top: 70%;
+    right: 3%;
+    border:solid 3px #0f0;
+    border-radius: 10px;
+    background-color: #0c0c0c;
+    color: white;
+
+}
+
+.close{
+    width: 30%;
+    height: 15vh;
+    border: solid 3px #0f0;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
