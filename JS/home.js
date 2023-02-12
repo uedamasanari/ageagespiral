@@ -9,7 +9,7 @@ axios
             },
         })
         .then(function (res) {
-        
+        console.log(res.data);
         const getDate = res.data.list.g1[0].start_time;
         let target =document.getElementById('dataContainer');
         let subDate = getDate.substring(5,10);
