@@ -43,6 +43,7 @@ body {
 .serch_div>input[type=text]::placeholder {
     color: white;
     font-size: 20px;
+    opacity: 0.5;
 }
 
 .filter_div {
