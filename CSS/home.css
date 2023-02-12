@@ -77,7 +77,11 @@ body {
     font-weight: bold;
 }
 
-
+.times{
+    width:50%;
+    margin:auto;
+    text-align: center;
+}
 
 .container_2 {
     width: 100%;

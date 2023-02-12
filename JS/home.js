@@ -1,6 +1,5 @@
 let nhk;
 window.onload =function(){
-setTimeout("seni()",5*1000);
 axios
     .post('https://api.nhk.or.jp/v2/pg/genre/400/g1/0000/2023-02-17.json?key=npMMRYTXmAkwXKmQctzwDkPFFwsooICW', {
         }, {
@@ -8,8 +7,7 @@ axios
                 'Content-Type': 'multipart/form-data',
             },
         })
-        .then(function (res) {
-        
+        .then(function (res) {        
         const getDate = res.data.list.g1[0].start_time;
         let target =document.getElementById('dataContainer');
         let subDate = getDate.substring(5,10);
@@ -44,7 +42,7 @@ axios
         block = document.getElementsByClassName("bangumi")[i];
         block.appendChild(title);
 
-        let time = document.createElement("h3");
+        let time = document.createElement("h4");
         let nowtime = res.data.list.g1[i].start_time;
         let subDate= nowtime.substring(11,16);
 
@@ -62,9 +60,6 @@ axios
     }
 
     });
-}
-function seni(){
-    location.href = './home.html';
 }
 
 
