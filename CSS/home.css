@@ -93,6 +93,15 @@ body {
     justify-content: space-around;
 }
 
+.block:nth-child(even){
+    animation: anime 3s linear infinite;
+}
+
+.block:nth-child(odd){
+    animation: anime 3s linear 500ms infinite;
+
+}
+
 .janru {
     margin-top: 3%;
     width: 20%;
@@ -101,7 +110,6 @@ body {
     border-radius: 20px;
     background-color:#0c0c0c;
     border: solid 3px #0f0;
-    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -117,7 +125,8 @@ body {
 }
 
 .bangumi h3{
-    margin:5% ;
+    font-size: 15px;
+    margin:3% ;
 }
 
 .time_shousai{
@@ -134,4 +143,15 @@ body {
     border: none;
     font-size: 20px;
     font-weight: bold;
+}
+
+@keyframes anime {
+    0%,
+    100%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
 }

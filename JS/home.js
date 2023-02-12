@@ -1,6 +1,6 @@
 let nhk;
 window.onload =function(){
-setTimeout("seni()",5*1000);
+
 axios
     .post('https://api.nhk.or.jp/v2/pg/genre/400/g1/0000/2023-02-17.json?key=npMMRYTXmAkwXKmQctzwDkPFFwsooICW', {
         }, {
