@@ -7,7 +7,37 @@ axios
                 'Content-Type': 'multipart/form-data',
             },
         })
-        .then(function (res) {        
+        .then(function (res) {
+
+
+        const inputElement = document.getElementById("searchTerm");
+        inputElement.addEventListener("keydown", function (event) {
+    if (event.key === "Enter") {
+        const searchTerm = inputElement.value;
+        
+        // 検索処理をここに書く
+
+        
+
+        // 入力フィールドからテキストを取得
+        const inputText = document.getElementById("searchInput").value;
+
+        // APIから取得したデータを抽出
+        const filteredData = res.data.list.g1.filter(item => {
+            return item.title.toLowerCase().includes(inputText.toLowerCase());
+        });
+
+        for(let i=0; i<filteredData.length; i++){
+            // HTMLの作成と出力の処理
+          }
+
+        console.log("Searching for: " + searchTerm);
+        }
+        });
+
+
+
+        
         const getDate = res.data.list.g1[0].start_time;
         let target =document.getElementById('dataContainer');
         let subDate = getDate.substring(5,10);
